@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    
+    <script src="http://fe80::df2:36c2:39bb:79ec%14/socket.io/socket.io.js"></script>
+	<script src="http://fe80::df2:36c2:39bb:79ec%14/remote.js"></script>
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div class="step main manter" data-x="-50" data-y="1500">
+        <small><q>computação</q></small>
+    </div>
+    
+    <div class="step main revisitada manter" data-x="-5" data-y="985">
+        <q>em nuvem</q>
+    </div>
+    
+    <div class="step main manter" data-x="400" data-y="985">
+        <big><q>=</q></big>
+    </div> 
+ 
+    <div class="step main manter" data-x="700" data-y="985">
+        <q>internet</q>
+    </div>
+    
+    
+    <div id="review" class="step" data-x="-5" data-y="985">
+    </div>     
+    
+    
+    
+    
+    
+    <div class="step main" data-x="510" data-y="370">
+        <q class="strike">tecnologia</q>
+    </div>      
+    
+    <div id="sub1" class="step sub" data-x="510" data-y="370" data-scale="0.2">
+        <q>conceito</q>
+    </div>
+    
+    <div id="sub2" class="step sub" data-x="600" data-y="320" data-scale="0.1">
+        <q>usa tecnologias<br/> já existentes</q>
+    </div>
+    
+    <div id="sub3" class="step sub" data-x="600" data-y="350" data-scale="0.1">
+        <q>ble</q>
+    </div>
+    
+    <div id="sub4" class="step sub" data-x="600" data-y="370" data-scale="0.1">
+        <q>bli</q>
+    </div>
+    
+    <div id="sub5" class="step sub" data-x="600" data-y="390" data-scale="0.1">
+        <q>blo</q>
+    </div>
+    
+    <div id="sub6" class="step sub" data-x="600" data-y="410" data-scale="0.1">
+        <q>blu</q>
+    </div>
+    
+        
+    
+    <div class="step main" data-x="-570" data-y="450">
+        <q>qq coisa</q>
+    </div>    
+    
+    <div class="step" data-x="0" data-y="-200" data-exclude="true" data-z="0" data-scale="3">
+		<q>obrigado</q>
+    </div>    
+    
+     
+    <div id="fundo" data-exclude="true" class="step" data-z="-10" data-scale="1">
+    </div>
+    
+    
+    <div id="overview" data-y="-200" class="step" data-scale="8">
+    </div>    
+
+</div>
+
+<div class="hint">
+    <p>Use a barra de espaços ou setas para navegar</p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+<!-- <script src="js/jquery-1.8.0.min.js"></script> -->
+
+<script>
+/*
+jQuery(function(){
+
+	$(otherSelector).bind('cssClassChanged', data, function(){ do stuff });
+
+
+});
+*/
+</script>
+
+</body>
+</html>
