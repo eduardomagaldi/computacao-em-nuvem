@@ -107,6 +107,26 @@ if ("ontouchstart" in document.documentElement) {
 <!-- <script src="js/jquery-1.8.0.min.js"></script> -->
 
 <script>
+
+// Find the right method, call on correct element
+function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+}
+
+// Launch fullscreen for browsers that support it!
+launchFullScreen(document.documentElement); // the whole page
+launchFullScreen(document.getElementById("videoElement")); // any individual element
+
+
+
+
+
 /*
 jQuery(function(){
 
