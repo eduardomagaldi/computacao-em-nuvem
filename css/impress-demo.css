@@ -722,13 +722,7 @@ q {
     opacity: 1;
 }
 
-.impress-on-sub1 .past.sub,
-.impress-on-sub2 .past.sub,
-.impress-on-sub3 .past.sub,
-.impress-on-sub4 .past.sub,
-.impress-on-sub5 .past.sub,
-.impress-on-sub6 .past.sub,
-.impress-on-sub7 .past.sub  
+body[class*='impress-on-sub'] .past.sub
 {
 	opacity: 0.2;
 }
