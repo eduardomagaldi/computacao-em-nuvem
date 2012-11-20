@@ -727,6 +727,26 @@ body[class*='impress-on-sub'] .past.sub
 	opacity: 0.2;
 }
 
+body:not([class*='impress-on-sub']) .past.main
+{
+	opacity: 1;
+}
+
+.impress-on-citacao #esquema.past
+{
+	opacity: 0;
+}
+
+#citacao.past
+{
+	opacity: 0;
+}
+
+#citacao big
+{
+	font-size: 46px;
+}
+
 .impress-on-review .step.revisitada q, .impress-on-overview q {
     -webkit-transform: scale(3);
     -moz-transform:    scale(3);
